@@ -14,7 +14,7 @@ api = Api(app)
 
 load_dotenv()
 
-api_url = "http://49.50.175.242:9894/v1/api/post"
+api_url = os.getenv('LETSGO_API')
 token = os.getenv('TOKEN')
 
 def as_json(f):
