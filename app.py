@@ -8,9 +8,11 @@ import time
 import requests
 from collections import Counter
 from dotenv import load_dotenv
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app,resources={r'*':{'origins':'http://localhost:8082'}})
 
 load_dotenv()
 
