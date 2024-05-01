@@ -12,7 +12,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app)
-CORS(app,resources={r'*':{'origins':'http://localhost:8082'}})
+CORS(app)
 
 load_dotenv()
 
